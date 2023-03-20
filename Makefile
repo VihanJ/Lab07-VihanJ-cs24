@@ -1,4 +1,4 @@
-CXX_FLAGS = 
+CXX_FLAGS = -Wall
 
-all: examheap.cpp heap.cpp
+examheap: examheap.cpp heap.cpp
 	g++ ${CXX_FLAGS} examheap.cpp heap.cpp -o examheap
