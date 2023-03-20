@@ -48,6 +48,10 @@ void Heap::push(int value){
 // the heap is correctly arranged
 void Heap::pop(){
 
+  if (vdata.size() == 0) {
+    return;
+  }
+
   vdata[0] = vdata[vdata.size()-1];
   vdata.pop_back();
   int i=0;
